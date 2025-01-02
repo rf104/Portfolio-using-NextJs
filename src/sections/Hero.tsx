@@ -9,6 +9,7 @@ import SparkleIcon from "@/assets/icons/sparkle.svg";
 export const HeroSection = () => {
   return (
   <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
+    <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
     <div className="absolute-inset-0 -z-30 opacity-5"
       style={
         {
@@ -51,7 +52,7 @@ export const HeroSection = () => {
     <HeroOrbit size={720} rotation={85}>
         <div className="size-3 rounded-full text-emerald-300/20"/>
     </HeroOrbit>
-
+    </div>
     <div className="container">
       <div className="flex flex-col items-center">
       <Image src={memojiImage} className="size-[100px]" alt="person picking behind a pc"/>
